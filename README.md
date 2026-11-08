@@ -34,6 +34,7 @@ minimal Hyprland setup for Arch Linux on a desktop.
 
 ## Install
 Back up your config first, then copy the files you want:
+
     cp -r .config/hypr ~/.config/
 
 ## Credits
