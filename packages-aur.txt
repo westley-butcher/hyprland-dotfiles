@@ -1,0 +1,10 @@
+curseforge
+fetch-git
+kgamma
+kwin-x11
+minecraft-launcher
+rufus-linux
+wacomtablet
+waypaper
+yay
+yay-debug

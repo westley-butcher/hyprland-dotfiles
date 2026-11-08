@@ -1,0 +1,68 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["mpris", "custom/gpu", "custom/cpu", "memory", "custom/nightlight", "tray"],
+
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "on-click": "activate",
+    "persistent-workspaces": {
+      "DP-1": [1, 2, 3],
+      "HDMI-A-1": [4, 5, 6]
+    }
+  },
+
+  "clock": {
+    "format": "{:%a %b %d    %H:%M:%S}",
+    "interval": 1,
+    "tooltip-format": "<tt>{calendar}</tt>"
+  },
+
+  "mpris": {
+    "format": "{status_icon} {artist} - {title}",
+    "status-icons": { "playing": "▶", "paused": "⏸" },
+    "max-length": 45
+  },
+
+  "pulseaudio": {
+    "format": "VOL {volume}%",
+    "format-muted": "MUTED",
+    "on-click": "pavucontrol"
+  },
+
+  "cpu": { "format": "CPU {usage}%", "interval": 3 },
+  "memory": { "format": "RAM {percentage}%", "interval": 5 },
+
+  "tray": {
+    "spacing": 10,
+    "icons": {
+        "nm-applet": "network-wireless-symbolic"
+    }
+},
+
+  "custom/gpu": {
+    "exec": "$HOME/.config/waybar/gpu.sh",
+    "interval": 2,
+    "format": "{}"
+  },
+
+  "custom/cpu": {
+    "exec": "$HOME/.config/waybar/cpu.sh",
+    "interval": 2,
+    "format": "{}"
+  },
+
+  "custom/nightlight": {
+    "exec": "$HOME/.config/waybar/nightlight.sh",
+    "return-type": "json",
+    "interval": 60,
+    "signal": 8,
+    "on-click": "$HOME/.config/waybar/nightlight.sh toggle"
+  }
+
+}
+

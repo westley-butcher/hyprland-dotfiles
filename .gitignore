@@ -1,0 +1,6 @@
+Wallpapers/
+Screenshots/
+*.log
+cache/
+*.save*
+*.bak

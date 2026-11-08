@@ -1,0 +1,38 @@
+@define-color bg   #1a1a1a;
+@define-color fg   #e6e6e6;
+@define-color dim  #6b6b6b;
+
+* {
+  font-family: "JetBrainsMono Nerd Font", "Noto Sans", sans-serif;
+  font-size: 13px;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+}
+
+window#waybar {
+  background: @bg;
+  color: @fg;
+}
+
+#workspaces button {
+  padding: 0 10px;
+  margin: 4px 2px;
+  color: @dim;
+  background: transparent;
+  box-shadow: none;
+}
+
+#workspaces button.active {
+  color: @fg;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+#clock, #mpris, #pulseaudio, #custom-gpu, #custom-cpu, #custom-nightlight, #cpu, #memory, #tray {
+  padding: 0 10px;
+}
+
+#custom-nightlight.on {
+  color: #ff8c42;
+}
