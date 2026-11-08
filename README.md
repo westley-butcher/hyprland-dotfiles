@@ -1,6 +1,6 @@
 # Hyprland dotfiles
 
-minimal Hyprland setup for Arch Linux.
+minimal Hyprland setup for Arch Linux on a desktop.
 
 ![screenshot](screenshot.png)
 
