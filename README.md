@@ -2,11 +2,11 @@
 
 minimal Hyprland setup for Arch Linux.
 
-/home/west/Screenshots/2026-11-08_09-45-43.png
+![screenshot](screenshot.png)
 
 ## What's included
 - **Hyprland** (Lua config) with square corners and a cream active border
-- **Waybar** with workspaces, clock, music, volume, GPU, CPU, and a night light toggle
+- **Waybar** with workspaces, clock, music, GPU, CPU, and a night light toggle
 - **hyprlauncher**, **hyprlock**, **hypridle**, **hyprsunset**, **hyprpaper** + **Waypaper**
 - **kitty**, **cava**, and **fastfetch**
 
@@ -21,16 +21,16 @@ minimal Hyprland setup for Arch Linux.
 - **Wallpapers:** the folder path in `.config/waypaper/config.ini` points to my home directory.
 
 ## Keybinds
-| Keys | Action |
-| META + T | Terminal |
-| META + Q | Launcher |
-| META + L | Lock screen |
-| META + W | Wallpaper picker |
-| META + 1-6 | Switch workspace |
-| Print | Screenshot (region to clipboard) |
-| META + F | Exit Hyprland |
-| META + C | Open kcalc |
-| META + S | Open Spotify |
+
+- **META + T:** Terminal
+- **META + Q:** Launcher
+- **META + L:** Lock screen
+- **META + W:** Wallpaper picker
+- **META + 1-6:** Switch workspace
+- **Print:** Screenshot (region to clipboard)
+- **META + F:** Exit Hyprland
+- **META + C:** Open kcalc
+- **META + S:** Open Spotify
 
 ## Install
 Back up your config first, then copy the files you want:
